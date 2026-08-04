@@ -86,45 +86,9 @@ Across all nations, the average maternal mortality rate of 160 per 100,000 sits 
 
 ---
 
-## Pandas methods demonstrated
-
-`pd.read_csv()` · `.head()` / `.tail()` · `.shape` · `.set_index()` · `.sort_index()` · `.sort_values()` · `.drop()` · `.loc[]` · `.iloc[]` · boolean masking · `.mean()` · `.median()` · calculated columns via column arithmetic
-
----
-
-## Requirements
-
-- Python 3
-- pandas
-- NumPy
-- Jupyter Notebook or Google Colab
-- An internet connection (the dataset is fetched from a URL at runtime)
-
-```bash
-pip install pandas numpy notebook
-```
-
 ## How to run
 
 1. Clone or download this repository.
 2. Open `GB885_Assignment_5_Roberts_K.ipynb` in Jupyter Notebook, JupyterLab, or Google Colab.
 3. Run all cells from top to bottom. Several cells reassign the DataFrame, so running out of order will produce different results.
 
----
-
-## Known data limitations
-
-Several columns contain missing values, which pandas excludes by default from `.mean()` and `.median()` calculations. Counts of missing values in the source file:
-
-| Column | Missing |
-| --- | --- |
-| `Minimum_Wage` | 44 |
-| `Unemployment_Rate` | 18 |
-| `CPI` | 16 |
-| `Maternal_Mortality_per_100k` | 13 |
-| `Life_Expectancy` | 7 |
-| `CO2_Emissions`, `Fertility_Rate`, `oop_health_exp`, `Physicians_per_1k` | 6 each |
-| `Birth_Rate`, `Infant mortality_per_1k`, `Official Language` | 5 each |
-| `GDP` | 1 |
-
-The 13 missing maternal mortality values matter most for this analysis: the global average in Question 9 is calculated across 180 countries, not 193, and the countries most likely to lack reporting infrastructure are often those with the highest rates. The figure is therefore likely to understate the true global average.
