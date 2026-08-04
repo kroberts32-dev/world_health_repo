@@ -78,7 +78,7 @@ Filtering for language subsets is done with a boolean mask on `Official Language
 | 10 | What share of healthcare is paid out of pocket in the country with the lowest infant mortality? | Finland (1.4 per 1,000): 0.2 |
 | 11 | What share of healthcare is paid out of pocket in the country with the highest infant mortality? | Central African Republic (84.5 per 1,000): 0.4 |
 
-### Interpretation for JPG
+### Interpretation for JPG using findings
 
 The gap between the best and worst performing countries is stark: infant mortality in the Central African Republic is roughly 60 times Finland's rate. Out-of-pocket health spending is twice as high in the higher-mortality country, consistent with the argument that publicly funded care is associated with better infant outcomes — though this notebook establishes association, not causation, and does not control for GDP, physician supply, or other confounders.
 
